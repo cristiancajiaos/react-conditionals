@@ -12,6 +12,9 @@ export default function Layout() {
       <hr/>
 
       <Car model="Mustang"/>
+
+      {/* This component will not render */}
+      <Car brand="Ford"/>
     </section>
   );
 }
