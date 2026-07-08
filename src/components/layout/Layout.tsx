@@ -1,4 +1,5 @@
 import './Layout.css'
+import Car from './car/Car';
 import Goal from './goal/Goal';
 
 export default function Layout() {
@@ -7,6 +8,10 @@ export default function Layout() {
   return (
     <section className="container my-2">
       {shots.map(shot => <Goal isGoal={shot}/>)}
+
+      <hr/>
+
+      <Car model="Mustang"/>
     </section>
   );
 }
